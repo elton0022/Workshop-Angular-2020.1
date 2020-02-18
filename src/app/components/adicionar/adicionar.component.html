@@ -1,0 +1,11 @@
+<form id="form-dev" [formGroup]="novoDev" (ngSubmit)="addDev()">
+  <header>
+    <label>Adicionar Dev</label>
+  </header>
+  <input type="text" formControlName="nome" placeholder="Nome"/>
+  <input type="number" formControlName="idade" placeholder="Idade"/>
+  <input type="text" formControlName="linguagem" placeholder="Linguagem favorita"/>
+  <input type="text" formControlName="cidade" placeholder="Cidade"/>
+  <button type="submit">Salvar</button>
+</form>
+

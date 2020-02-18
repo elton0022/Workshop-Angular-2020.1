@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './components/cabecalho/cabecalho.component';
 import { ControladorService } from './services/controlador.service';
 import { ListaComponent } from './components/lista/lista.component';
+import { AtualizarComponent } from './components/atualizar/atualizar.component';
+import { AdicionarComponent } from './components/adicionar/adicionar.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule],
-  declarations: [ AppComponent, CabecalhoComponent, ListaComponent],
+  declarations: [ AppComponent, CabecalhoComponent, ListaComponent, AtualizarComponent, AdicionarComponent],
   bootstrap:    [ AppComponent ],
   providers: [ControladorService]
 })
