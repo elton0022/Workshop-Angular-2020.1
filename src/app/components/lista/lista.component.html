@@ -2,4 +2,16 @@
   <header id="cabecalho">
     <label>Lista de Devs</label>
   </header>
+  <ul class="devs">
+    <li id="lista-devs" *ngFor="let dev of devs">
+      <span class="id">{{dev.id}}</span>
+      <label id="descricao">
+        {{dev.name}}, {{dev.age}} anos, adora {{dev.techs}}, mora em {{dev.city}}
+      </label>
+      <div>
+        <button id="atualizar" >Atualizar</button>
+        <button id="apagar" (click)="apagarDev(dev.id)">Apagar</button>
+      </div>
+    </li>
+  </ul>
 </div>
