@@ -1,0 +1,10 @@
+<form id="form-dev" [formGroup]="atualizarDev" (ngSubmit)="atualizar()">
+  <header>
+    <label>atualizar Dev</label>
+  </header>
+  <input type="text" formControlName="nome" placeholder="Name"/>
+  <input type="number" formControlName="idade" placeholder="Idade"/>
+  <input type="text" formControlName="linguagem" placeholder="Linguagem favorita"/>
+  <input type="text" formControlName="cidade" placeholder="Cidade"/>
+  <button type="submit">Atualizar</button>
+</form>

@@ -10,7 +10,7 @@ export class ControladorService {
 
   constructor() { }
 
-  adicionar(dev:Dev){
+  adicionarDev(dev:Dev){
     dev.id = this.id; 
     this.Devs.push(dev);
     this.id = this.id + 1;

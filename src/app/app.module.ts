@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+import { AppRoutingModule }     from './routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -13,7 +14,7 @@ import { AdicionarComponent } from './components/adicionar/adicionar.component';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, ReactiveFormsModule],
+  imports:      [ AppRoutingModule, BrowserModule, FormsModule, ReactiveFormsModule],
   declarations: [ AppComponent, CabecalhoComponent, ListaComponent, AtualizarComponent, AdicionarComponent],
   bootstrap:    [ AppComponent ],
   providers: [ControladorService]
