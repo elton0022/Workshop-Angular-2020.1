@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { Router } from '@angular/router';
 import { ControladorService } from '../../services/controlador.service';
 
 @Component({
@@ -20,15 +19,16 @@ export class AdicionarComponent implements OnInit {
     cidade: new FormControl()
   });
 
-  constructor(public controlador: ControladorService, public router: Router) { }
+  constructor(public controlador: ControladorService) { }
 
   ngOnInit() {}
 
   addDev(){
+    console
     
     this.controlador.adicionarDev(this.novoDev.value);
 
-    this.router.navigate(['/listDevs']);
+    //this.router.navigate(['/listDevs']);
   }
 
 }

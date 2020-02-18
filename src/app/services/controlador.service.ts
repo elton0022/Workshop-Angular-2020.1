@@ -6,7 +6,7 @@ export class ControladorService {
 
   id = 1;
 
-  Devs: Dev[] = [{id: 1, nome: "tesste", idade:12, linguagem: "java", cidade:"Crateús"}];
+  Devs: Dev[] = [];
 
   constructor() { }
 

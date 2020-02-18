@@ -6,6 +6,6 @@
   <input type="number" formControlName="idade" placeholder="Idade"/>
   <input type="text" formControlName="linguagem" placeholder="Linguagem favorita"/>
   <input type="text" formControlName="cidade" placeholder="Cidade"/>
-  <button type="submit">Salvar</button>
+  <button type="submit" [disabled]="!novoDev.valid">Salvar</button>
 </form>
 
