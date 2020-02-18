@@ -8,9 +8,9 @@ import { AdicionarComponent } from './components/adicionar/adicionar.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/lista', pathMatch: 'full' },
-  { path: '/lista', component: ListaComponent },
-  { path: '/adicionar', component: AdicionarComponent},
-  { path: '/atualizar/:id', component: AtualizarComponent }
+  { path: 'lista', component: ListaComponent },
+  { path: 'adicionar', component: AdicionarComponent},
+  { path: 'atualizar/:id', component: AtualizarComponent }
 ];
 
 @NgModule({

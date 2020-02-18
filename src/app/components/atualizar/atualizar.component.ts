@@ -28,10 +28,10 @@ export class AtualizarComponent implements OnInit {
     this.Dev = this.controller.getDev(this.id);
     this.atualizarDev = new FormGroup({
       id: new FormControl(),
-      nome: new FormControl(this.Dev.name),
-      idade: new FormControl(this.Dev.age),
-      linguagem: new FormControl(this.Dev.techs),
-      cidade: new FormControl(this.Dev.city)
+      nome: new FormControl(this.Dev.nome),
+      idade: new FormControl(this.Dev.idade),
+      linguagem: new FormControl(this.Dev.linguagem),
+      cidade: new FormControl(this.Dev.cidade)
     });
   }
 

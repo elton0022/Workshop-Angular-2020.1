@@ -2,16 +2,17 @@
   <header id="cabecalho">
     <label>Lista de Devs</label>
   </header>
-  <ul class="devs">
+  <ul class="devs" *ngIf="devs.length > 0">
     <li id="lista-devs" *ngFor="let dev of devs">
       <span class="id">{{dev.id}}</span>
       <label id="descricao">
         {{dev.nome}}, {{dev.idade}} anos, adora {{dev.linguagem}}, mora em {{dev.cidade}}
       </label>
       <div>
-        <button id="atualizar" >Atualizar</button>
+        <button routerLink="/atualizar/{{dev.id}}" id="atualizar" >Atualizar</button>
         <button id="apagar" (click)="apagarDev(dev.id)">Apagar</button>
       </div>
     </li>
   </ul>
+  <label id="msglista" *ngIf="devs.length == 0">Não há desenvolvedores cadastrados</label>
 </div>

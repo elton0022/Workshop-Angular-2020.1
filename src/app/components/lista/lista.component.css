@@ -90,7 +90,7 @@ div.lista header#cabecalho{
     color: #fff;
 }
 
-div#lista label#msglista{
+div.lista label#msglista{
   margin-bottom: 10px;
   font-style: italic;
   font-size: 14px;

@@ -25,7 +25,6 @@ export class AdicionarComponent implements OnInit {
   ngOnInit() {}
 
   addDev(){
-    console.log(this.novoDev.value);
     
     this.controlador.adicionarDev(this.novoDev.value);
 
