@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ControladorService } from '../../services/controlador.service';
 
 @Component({
   selector: 'app-lista',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaComponent implements OnInit {
 
-  constructor() { }
+  devs = [];
+
+  constructor(public controlador: ControladorService) { }
 
   ngOnInit() {
+    this.devs = this.controlador.Devs;
+  }
+
+  apagarDev(id:number){
+    this.controlador.removerDev(id);
+    this.atualizarDevs();
+  }
+
+  atualizarDevs(){
+    this.devs = this.controlador.Devs;
   }
 
 }
